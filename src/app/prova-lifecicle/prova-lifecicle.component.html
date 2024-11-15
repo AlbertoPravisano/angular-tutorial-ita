@@ -1,0 +1,12 @@
+<p>
+  <!-- Two Way binding -->
+  <input [(ngModel)]="buttonText" />
+  <button
+    mat-flat-button
+    [disabled]="isButtonDisabled"
+    (click)="onDestroy($event)"
+  >
+    {{ buttonText }}
+  </button>
+  <button (click)="mandaDati()">Manda dati a padre</button>
+</p>
